@@ -69,3 +69,73 @@ a:hover {
 .sidebar section ul li {
   padding: 2px 0;
 }
+
+header {
+  grid-column: 2 / 13;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding-top: 12px;
+  background-color: #fefefe;
+}
+
+header .top-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .top-header ul {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header .top-header ul li {
+  padding-left: 10px;
+}
+
+header .bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+header ul {
+  align-items: center;
+  display: flex;
+}
+
+header .bottom-header .right-navbar {
+  align-items: center;
+  display: flex;
+}
+
+header li {
+  padding: 0 15px;
+}
+
+header .bottom-header input {
+  outline: none;
+  border: none;
+  font-size: 12px;
+  height: 25px;
+}
+
+header .bottom-header .right-navbar .input-container {
+  border: 1px solid gray;
+  padding: 0 10px;
+  margin-right: 10pxh;
+  display: flex;
+  align-items: center;
+}
+
+header .search-logo {
+  background-image: url('https://es.wikipedia.org/w/skins/Vector/resources/common/images/search.svg?bbf78');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 15px;
+  width: 15px;
+}
