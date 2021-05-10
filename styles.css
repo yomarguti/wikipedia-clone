@@ -21,7 +21,7 @@ a:hover {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 85px auto 85px;
+  grid-template-rows: 85px auto 125px;
 }
 
 .sidebar {
@@ -255,4 +255,20 @@ main .main-content .today ul {
 main .main-content .today li {
   list-style: disc;
   margin-left: 23px;
+}
+
+footer {
+  grid-column: 2 / span 11;
+  font-size: 13px;
+  padding: 25px 15px;
+  background-color: #f6f6f6;
+}
+
+footer ul {
+  display: flex;
+  padding-top: 20px;
+}
+
+footer ul li {
+  padding-right: 20px;
 }
