@@ -110,6 +110,15 @@ header ul {
   display: flex;
 }
 
+header .bottom-header li {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+header .bottom-header .highlight {
+  background-image: linear-gradient(to top, #77c1f6 0, #e8f2f8 1px, #ffffff 100%);
+}
+
 header .bottom-header .right-navbar {
   align-items: center;
   display: flex;
