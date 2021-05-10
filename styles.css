@@ -115,6 +115,10 @@ header .bottom-header li {
   padding-top: 8px;
 }
 
+header .bottom-header {
+  padding-right: 10px;
+}
+
 header .bottom-header .highlight {
   background-image: linear-gradient(to top, #77c1f6 0, #e8f2f8 1px, #ffffff 100%);
 }
