@@ -21,9 +21,11 @@ a:hover {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 85px auto 85px;
 }
 
 .sidebar {
+  grid-row: 1 / span 3;
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
@@ -74,6 +76,7 @@ header {
   grid-column: 2 / 13;
   display: flex;
   flex-direction: column;
+  height: 100%;
   font-size: 12px;
   padding-top: 12px;
   background-color: #fefefe;
@@ -138,4 +141,118 @@ header .search-logo {
   background-size: contain;
   height: 15px;
   width: 15px;
+}
+
+main {
+  grid-column: 2/13;
+  border: 1px solid #a7d7f9;
+  padding: 30px 20px;
+}
+
+main .main-top {
+  margin: 15px 20px;
+  border: 1px solid #c8ccd1;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg');
+  background-position: right;
+}
+
+main .main-top .main-top-left {
+  padding: 40px 0px 40px 20px;
+  background-image: linear-gradient(to right, #f8f9fa 0%, #f8f9fa 70%, rgba(248, 249, 250, 0) 100%);
+  width: 45%;
+}
+
+main .main-top-left h1 {
+  font-weight: normal;
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  padding-bottom: 20px;
+}
+
+main .main-top .main-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 55%;
+  padding: 40px 20px 40px 0px;
+}
+
+main .main-top .main-top-right nav ul {
+  padding-top: 20px;
+  display: flex;
+}
+
+main .main-top .main-top-right nav ul li {
+  padding-left: 10px;
+}
+
+main .main-top .main-top-right nav ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+main .main-top .main-top-right nav ul li a:hover {
+  color: #0645ad;
+  text-decoration: none;
+  background-color: white;
+}
+
+main .main-content {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  column-gap: 20px;
+  margin: 20px 20px;
+  line-height: 1.7rem;
+}
+
+main .main-content h2 {
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+main .main-content .featured {
+  border: 1px solid #c8ccd1;
+  padding: 20px;
+}
+
+main .main-content .featured span {
+  color: gray;
+}
+
+main .featured .featured-image-container {
+  width: 180px;
+  float: right;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border: 1px solid #c8ccd1;
+  margin-left: 30px;
+  font-size: 13px;
+  line-height: 1.1rem;
+}
+
+main .featured .featured-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+main .featured .feature-article-content p {
+  margin-bottom: 10px;
+}
+
+main .main-content .today {
+  border: 1px solid #c8ccd1;
+  padding: 20px;
+}
+
+main .main-content .today ul {
+  padding: 10px 0 20px 0;
+}
+
+main .main-content .today li {
+  list-style: disc;
+  margin-left: 23px;
 }
